@@ -1,0 +1,15 @@
+hosts:
+  host-1:
+    peer_ip: 11.1.1.1011
+    external_ip: 11.1.1.1011
+    port: 3000
+    ssh_command: ssh -l rocky -i /Users/usman/ 11.1.1.1011
+  host-2:
+    peer_ip: 11.1.1.1011
+    external_ip: 11.1.1.1011
+    port: 3000
+    ssh_command: ssh -l rocky -i /Users/usman/ 11.1.1.1011
+s3:
+  enabled: true
+  bucket: control-plane-e2e-739078683117-a-sou-1
+  region: a-sou-1
