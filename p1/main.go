@@ -48,6 +48,8 @@ func main() {
 	}
 	fmt.Printf("length of host %d", len(data_obj.Hosts))
 
+	fmt.Println(" individual value: " + data_obj.Hosts["host-1"].Peer_ip)
+
 	for name, host := range data_obj.Hosts {
 		fmt.Printf(" name :  %s, Peer_ip: %s, external_ip %s,port %d, ssh_command %s \n",
 			name, host.Peer_ip, host.External_ip, host.Port, host.Ssh_command)
